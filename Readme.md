@@ -1,7 +1,7 @@
 # Личный проект «Техномарт»
 
 * Студент: [N](https://up.htmlacademy.ru/htmlcss/31/user/1810663).
-* Наставник: `Неизвестно`.
+* Наставник: [Евгений Котов](https://htmlacademy.ru/profile/eugene_kotov).
 
 ---
 
