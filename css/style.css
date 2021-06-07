@@ -1,0 +1,347 @@
+/* Variables */
+
+:root {
+    --basic-red: #EE3643;
+    --basic-green: #63A63E;
+    --basic-grey: #3D546F;
+    --basic-greylight: #C5C5C5;
+    --basic-background: #F1F5F7;
+    --white: #FFFFFF;
+    --special-yellow: #FFBF47;
+    --special-blue: #3BBCE3;
+    --special-lilac: #DC91D8;
+    --special-greenlight: #8ED78F;
+    --special-yellowlight: #FFD180;
+    --success: #5FBB2D;
+    --warning: #FFBF47;
+    --error: #BA2732;
+
+    --dark: #32425C;
+    --darker: #293449;
+    --basic-black: #000000;
+    --basic-greenlight: #F9F5F0;
+    --border-grey: #EAEAEA;
+    --discount-grey: #A9A9A9;
+
+}
+
+/* Global */
+
+body {
+    background-color: var(--white);
+    font-family: 'Cuprum', Arial, sans-serif;
+    font-weight: 400;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Main Navigation */
+
+.main-header {
+    background-color: var(--basic-background);
+}
+
+.order-navigation ul {
+    list-style: none;
+}
+
+.order-navigation a {
+    color: var(--white);
+}
+
+.main-navigation ul {
+    list-style: none;
+}
+
+.main-navigation a {
+    color: var(--white);
+}
+
+.order-navigation {
+    background-color: var(--darker);
+    color: var(--white);
+    font-size: 18px;
+    line-height: 24px;
+}
+
+.order-navigation li:last-child {
+    background-color: var(--basic-green);
+}
+
+.shop-description {
+    color: var(--basic-red);
+    font-size: 16px;
+    line-height: 23px;
+    font-style: italic;
+}
+
+.header-phone-number {
+    font-size: 21px;
+    line-height: 30px;
+    color: var(--basic-red);
+    padding: 7px 50px 8px 74px;
+    border: 3px solid var(--white)
+}
+
+.header-address {
+    font-size: 14px;
+    height: 24px;
+    color: var(--dark);
+}
+
+.login {
+    font-size: 21px;
+    line-height: 21px;
+    background-color: var(--white);
+    color: var(--basic-black);
+    padding: 12px 24px 12px 24px;
+    border: none;
+}
+
+.main-navigation {
+    background-color: var(--dark);
+    font-size: 18px;
+    line-height: 24px;
+    border-bottom: 5px solid var(--darker);
+}
+
+/* Features */
+
+.feature-item {
+    color: var(--white);
+}
+
+.feature-item:first-child,
+.feature-item:last-child {
+    background-color: var(--special-yellow);
+}
+
+.feature-item:nth-child(2) {
+    background-color: var(--special-blue);
+}
+
+.feature-item:nth-child(3) {
+    background-color: var(--special-lilac);
+}
+
+.feature-item:nth-child(4) {
+    background-color: var(--special-greenlight);
+}
+
+.feature-item h3 {
+    font-size: 24px;
+    line-height: 30px;
+    color: inherit;
+}
+
+.feature-item a {
+    font-size: 14px;
+    line-height: 18px;
+    text-transform: uppercase;
+    color: inherit;
+    padding: 10px 24px 10px 24px;
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+/* Catalog */
+
+.catalog {
+    color: var(--white);
+    width: 620px;
+    height: 266px;
+    background-color: var(--basic-greylight);
+    background-image: url("../img/man-with-bosch-perforator.jpg");
+}
+
+.catalog h3 {
+    color: inherit;
+    font-size: 36px;
+    line-height: 36px;
+    text-transform: uppercase;
+}
+
+.catalog p {
+    color: inherit;
+    font-size: 18px;
+    line-height: 24px;
+}
+
+.catalog a {
+    color: inherit;
+    font-size: 14px;
+    line-height: 18px;
+    background-color: var(--basic-red);
+    padding: 11px 46px 9px 46px;
+}
+
+/* Popular products */
+
+.popular-products {
+    background-color: var(--basic-greenlight);
+}
+
+.popular-products h2 {
+    color: var(--dark);
+    font-size: 30px;
+    line-height: 30px;
+    text-transform: uppercase;
+}
+
+.link {
+    color: var(--white);
+    font-size: 14px;
+    line-height: 18px;
+    text-transform: uppercase;
+    background-color: var(--basic-red);
+    padding: 11px 24px 9px 24px;
+    border: none;
+}
+
+.catalog-list {
+    list-style: none;
+}
+
+.catalog-item {
+    border: 1px solid var(--border-grey);
+}
+
+.catalog-item {
+    font-family: 'PT Sans', Arial, sans-serif;
+}
+
+.catalog-item p:nth-child(2) {
+    font-size: 18px;
+    line-height: 20px;
+    font-weight: bold;
+}
+
+.catalog-item p:nth-child(3) {
+    font-size: 17px;
+    line-height: 18px;
+    font-weight: bold;
+    color: var(--discount-grey);
+    text-decoration: line-through;
+}
+
+.button-price {
+    font-size: 17px;
+    line-height: 18px;
+    color: var(--white);
+    background-color: var(--basic-red);
+    padding: 10px 44px 10px 32px;
+}
+
+.block-catalog {
+    width: 620;
+    height: 266;
+    background-color: ;
+}
+
+/* Services */
+.services {
+    background-color: var(--basic-background);
+}
+
+.services h2 {
+    font-size: 30px;
+    line-height: 30px;
+    text-transform: uppercase;
+    font-weight: 400;
+}
+
+.services > p {
+    font-family: 'PT Sans', Arial, sans-serif;
+    font-size: 13px;
+    line-height: 24px;
+}
+
+.services-list {
+    list-style: none;
+}
+
+.service-item p {
+    color: var(--white);
+    background-color: var(--dark);
+    font-size: 21px;
+    line-height: 30px;
+    font-weight: bold;
+    padding: 17.5px 139px 13.5px 22px;
+}
+
+.services h3 {
+    font-size: 30px;
+    line-height: 30px;
+    text-transform: uppercase;
+    font-weight: 400;
+    color: var(--dark);
+}
+
+/* About Company */
+.about-company h2 {
+    font-size: 30px;
+    line-height: 30px;
+    text-transform: uppercase;
+    font-weight: 400;
+}
+
+.about-company > p {
+    font-size: 13px;
+    line-height: 24px;
+    font-family: 'Cuprum', Arial, sans-serif;
+}
+
+.about-company-item p {
+    font-size: 18px;
+    line-height: 24px;
+}
+
+/* Footer Navigation */
+
+.footer-navigation {
+    background-color: var(--dark);
+    color: var(--white);
+    font-size: 18px;
+    line-height: 24px;
+}
+
+.footer-navigation ul {
+    list-style: none;
+}
+
+.footer-navigation a {
+    color: inherit;
+}
+
+.gold {
+    color: var(--special-yellowlight);
+}
+
+/* Footer Contacts */
+
+.logo {
+    background-color: var(--basic-red);
+    padding: 21px 42px 25px 41px;
+    box-shadow: inset 0px -5px 0px rgba(0, 0, 0, 0.24);
+}
+
+.footer-contacts {
+    background-color: var(--darker);
+    color: var(--white);
+    font-size: 16px;
+    line-height: 18px;
+}
+
+.social-list {
+    list-style: none;
+}
+
+.social-item a {
+    color: inherit;
+}
