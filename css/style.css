@@ -22,6 +22,7 @@
     --basic-greenlight: #F9F5F0;
     --border-grey: #EAEAEA;
     --discount-grey: #A9A9A9;
+    --filter-sort: #F7F3EC;
 
 }
 
@@ -103,6 +104,16 @@ img {
     color: var(--basic-black);
     padding: 12px 24px 12px 24px;
     border: none;
+}
+
+.profile-list {
+    list-style: none;
+}
+
+.profile-item {
+    font-size: 16px;
+    line-height: 18px;
+    color: var(--dark);
 }
 
 .main-navigation {
@@ -216,18 +227,34 @@ img {
     font-family: 'PT Sans', Arial, sans-serif;
 }
 
-.catalog-item p:nth-child(2) {
+.catalog-item .product-name {
     font-size: 18px;
     line-height: 20px;
     font-weight: bold;
 }
 
-.catalog-item p:nth-child(3) {
+.catalog-item .initial-price {
     font-size: 17px;
     line-height: 18px;
     font-weight: bold;
     color: var(--discount-grey);
     text-decoration: line-through;
+}
+
+.catalog-item .button-purchase {
+    background-color: var(--basic-green);
+    font-size: 14px;
+    line-height: 18px;
+    color: var(--white);
+    text-transform: uppercase;
+}
+
+.catalog-item .button-save {
+    background-color: var(--white);
+    font-size: 14px;
+    line-height: 18px;
+    color: var(--dark);
+    text-transform: uppercase;
 }
 
 .button-price {
@@ -241,7 +268,6 @@ img {
 .block-catalog {
     width: 620;
     height: 266;
-    background-color: ;
 }
 
 /* Services */
@@ -344,4 +370,117 @@ img {
 
 .social-item a {
     color: inherit;
+}
+
+/* Catalog.html Main */
+
+.breadcrumbs {
+    list-style: none;
+}
+
+.breadcrumbs a {
+    font-family: 'PT Sans', Arial, sans-serif;
+    font-size: 13px;
+    line-height: 18px;
+    color: var(--black);
+    text-transform: uppercase;
+}
+
+.page-title {
+    font-size: 30px;
+    line-height: 30px;
+    font-weight: 400;
+    color: var(--dark);
+    background-color: var(--basic-background);
+}
+
+.filters h3, .sorts h3 {
+    font-size: 13px;
+    line-height: 18px;
+    font-family: 'PT Sans', Arial, sans-serif;
+    font-weight: 400;
+    color: var(--black);
+    background-color: var(--filter-sort);
+}
+
+.filters-price {
+    background-color: var(--filter-sort);
+}
+
+.filters legend {
+    font-size: 17px;
+    line-height: 30px;
+    font-family: 'PT Sans', Arial, sans-serif;
+    font-weight: bold;
+}
+
+.filters-price input {
+    font-size: 17px;
+    line-height: 18px;
+    font-family: 'PT Sans', Arial, sans-serif;
+}
+
+.filters-option {
+    font-size: 15px;
+    line-height: 19px;
+    font-family: 'PT Sans', Arial, sans-serif;
+}
+
+.button-apply-filters {
+    background-color: var(--white);
+    font-size: 13px;
+    line-height: 18px;
+    font-family: 'PT Sans', Arial, sans-serif;
+    text-transform: uppercase;
+}
+
+.sorts {
+    background-color: var(--filter-sort);
+}
+
+.sort-by-list {
+    list-style: none;
+}
+
+.button-sort-by {
+    font-family: 'PT Sans', Arial, sans-serif;
+    font-size: 13px;
+    line-height: 18px;  
+    text-decoration: underline;
+    text-decoration-style: dotted;
+    color: rgba(0, 0, 0, 0.3);
+    text-transform: uppercase;
+    background-color: transparent;
+    border: none;
+}
+
+.sort-order-list {
+    list-style: none;
+}
+
+.pagination-list {
+    list-style: none;
+}
+
+.pagination-item a {
+    font-size: 13px;
+    line-height: 18px;
+    text-transform: uppercase;
+    color: var(--black);
+}
+
+.summary {
+    background-color: var(--basic-background);
+}
+
+.summary h2 {
+    font-size: 30px;
+    line-height: 30px;
+    font-weight: 400;
+}
+
+.summary p {
+    font-size: 13px;
+    line-height: 24px;
+    font-family: 'PT Sans', Arial, sans-serif;
 }
