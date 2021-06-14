@@ -28,6 +28,16 @@
 
 /* Global */
 
+.page {
+    height: 100%;
+}
+
+.page-body {
+    min-height: 100%;
+    display: grid;
+    grid-template-rows: min-content 1fr min-content;
+}
+
 body {
     background-color: var(--white);
     font-family: 'Cuprum', Arial, sans-serif;
@@ -47,6 +57,19 @@ img {
 
 .main-header {
     background-color: var(--basic-background);
+    margin-bottom: 60px;
+}
+
+.order-navigation {
+    background-color: var(--darker);
+    color: var(--white);
+    font-size: 18px;
+    line-height: 24px;
+}
+
+.container {
+    width: 940px;
+    margin: 0 auto;
 }
 
 .order-navigation ul {
@@ -57,19 +80,20 @@ img {
     color: var(--white);
 }
 
+.main-navigation {
+    background-color: var(--dark);
+    font-size: 18px;
+    line-height: 24px;
+    border-bottom: 5px solid var(--darker);
+    margin-bottom: 60px;
+}
+
 .main-navigation ul {
     list-style: none;
 }
 
 .main-navigation a {
     color: var(--white);
-}
-
-.order-navigation {
-    background-color: var(--darker);
-    color: var(--white);
-    font-size: 18px;
-    line-height: 24px;
 }
 
 .order-navigation li:last-child {
@@ -81,6 +105,7 @@ img {
     font-size: 16px;
     line-height: 23px;
     font-style: italic;
+    width: 200px;
 }
 
 .header-phone-number {
@@ -116,21 +141,24 @@ img {
     color: var(--dark);
 }
 
-.main-navigation {
-    background-color: var(--dark);
-    font-size: 18px;
-    line-height: 24px;
-    border-bottom: 5px solid var(--darker);
-}
-
 /* Features */
+
+.features-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 20px;
+    padding: 0;
+    margin: 0;
+}
 
 .feature-item {
     color: var(--white);
+    width: 300px;
+    height: 123px;
 }
 
-.feature-item:first-child,
-.feature-item:last-child {
+.feature-item:first-child {
     background-color: var(--special-yellow);
 }
 
@@ -144,6 +172,10 @@ img {
 
 .feature-item:nth-child(4) {
     background-color: var(--special-greenlight);
+}
+
+.feature-item:nth-child(5) {
+    background-color: var(--special-yellow);
 }
 
 .feature-item h3 {
@@ -169,6 +201,8 @@ img {
     height: 266px;
     background-color: var(--basic-greylight);
     background-image: url("../img/man-with-bosch-perforator.jpg");
+    grid-column: 1 / 3;
+    grid-row: 2 / 4;
 }
 
 .catalog h3 {
@@ -196,6 +230,7 @@ img {
 
 .popular-products {
     background-color: var(--basic-greenlight);
+    margin-top: 60px;
 }
 
 .popular-products h2 {
@@ -203,6 +238,7 @@ img {
     font-size: 30px;
     line-height: 30px;
     text-transform: uppercase;
+    margin-top: 60px;
 }
 
 .link {
@@ -273,6 +309,16 @@ img {
 /* Services */
 .services {
     background-color: var(--basic-background);
+    padding: 64px 0 100px 0;
+    background-image: url("../img/shipping-service.png");
+    background-repeat: no-repeat;
+    background-position: 69% 100%;
+}
+
+.services-columns {
+    display: grid;
+    grid-template-columns: min-content 1fr;
+    gap: 80px;
 }
 
 .services h2 {
@@ -290,6 +336,7 @@ img {
 
 .services-list {
     list-style: none;
+    padding: 0;
 }
 
 .service-item p {
@@ -299,6 +346,7 @@ img {
     line-height: 30px;
     font-weight: bold;
     padding: 17.5px 139px 13.5px 22px;
+    margin: 0;
 }
 
 .services h3 {
@@ -310,6 +358,13 @@ img {
 }
 
 /* About Company */
+.about-company {
+    display: grid;
+    grid-template-columns: 1fr min-content;
+    margin-top: 70px;
+    margin-bottom: 70px;
+}
+
 .about-company h2 {
     font-size: 30px;
     line-height: 30px;
@@ -317,7 +372,7 @@ img {
     font-weight: 400;
 }
 
-.about-company > p {
+.about-company-text {
     font-size: 13px;
     line-height: 24px;
     font-family: 'Cuprum', Arial, sans-serif;
@@ -328,6 +383,25 @@ img {
     line-height: 24px;
 }
 
+.button-contact {
+    width: 300px;
+}
+
+/* Footer */
+
+/* .main-footer {
+    outline: 5px solid rgba(255, 0, 0, 0.7);
+    outline-offset: -5px;
+} */
+
+.main-footer .wrapper:first-child {
+    background-color: var(--dark);
+}
+
+.main-footer .wrapper:last-child {
+    background-color: var(--darker);
+}
+
 /* Footer Navigation */
 
 .footer-navigation {
@@ -335,6 +409,10 @@ img {
     color: var(--white);
     font-size: 18px;
     line-height: 24px;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
 }
 
 .footer-navigation ul {
@@ -353,7 +431,10 @@ img {
 
 .logo {
     background-color: var(--basic-red);
-    padding: 21px 42px 25px 41px;
+    width: 220px;
+    height: 68px;
+    text-align: center;
+    vertical-align: middle;
     box-shadow: inset 0px -5px 0px rgba(0, 0, 0, 0.24);
 }
 
@@ -362,14 +443,22 @@ img {
     color: var(--white);
     font-size: 16px;
     line-height: 18px;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
 }
 
 .social-list {
     list-style: none;
+    justify-self: center;
 }
 
 .social-item a {
     color: inherit;
+}
+
+.footer-contacts-feedback {
+    justify-self: end;
 }
 
 /* Catalog.html Main */
