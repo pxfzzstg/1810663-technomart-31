@@ -57,6 +57,9 @@ img {
 
 .main-header {
     background-color: var(--basic-background);
+}
+
+.main-header-margin-bottom {
     margin-bottom: 60px;
 }
 
@@ -100,12 +103,19 @@ img {
     background-color: var(--basic-green);
 }
 
+.header-shop {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding-top: 46px;
+}
+
 .shop-description {
     color: var(--basic-red);
     font-size: 16px;
     line-height: 23px;
     font-style: italic;
     width: 200px;
+    margin-left: 30px;
 }
 
 .header-phone-number {
@@ -253,6 +263,8 @@ img {
 
 .catalog-list {
     list-style: none;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
 }
 
 .catalog-item {
@@ -481,6 +493,17 @@ img {
     font-weight: 400;
     color: var(--dark);
     background-color: var(--basic-background);
+    padding: 29px 0 30px 29px;
+}
+
+.main-catalog {
+    display: grid;
+    grid-template-columns: 220px 1fr;
+    margin-bottom: 59px;
+}
+
+.filters {
+    margin-right: 21px;
 }
 
 .filters h3, .sorts h3 {
@@ -529,6 +552,8 @@ img {
 
 .sort-by-list {
     list-style: none;
+    padding: 0;
+    margin: 0;
 }
 
 .button-sort-by {
@@ -558,6 +583,13 @@ img {
     color: var(--black);
 }
 
+.summary-wrapper {
+    background-color: var(--basic-background);
+    display: grid;
+    padding-bottom: 67px;
+    padding-top: 64px;
+}
+
 .summary {
     background-color: var(--basic-background);
 }
@@ -566,6 +598,8 @@ img {
     font-size: 30px;
     line-height: 30px;
     font-weight: 400;
+    padding: 0;
+    margin: 0;
 }
 
 .summary p {
