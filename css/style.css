@@ -282,7 +282,7 @@ img {
     align-items: center;
 }
 
-.feature-item figure {
+.feature-item-image {
     grid-column: 2 / -1;
     grid-row: 1 / -1;
     display: flex;
