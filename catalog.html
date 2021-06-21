@@ -11,22 +11,26 @@
   <body class="page-body">
 
   <header class="main-header">
-    <section class="order-navigation container">
-      <a href="">
-        <img src="img/technomart-text.png" width="108" height="18" alt="technomart logo">
-      </a>
-      <form action="#" method="get">
-        <button type="submit">Search</button>
-        <input type="search" placeholder="Поиск:">
-      </form>
-      <ul>
-        <li><a href="">Закладки</a></li>
-        <li><a href="">Корзина</a></li>
-        <li><a href="">Оформить заказ</a></li>
-      </ul>
-    </section>
+    <div class="order-navigation-wrapper">
+      <div class="container">
+        <section class="order-navigation">
+          <a class="order-navigation-logo" href="">
+            <img src="img/technomart-text.png" width="108" height="18" alt="technomart logo">
+          </a>
+          <form action="#" method="get">
+            <!-- <button type="submit">Search</button> -->
+            <input class="search" type="search" placeholder="Поиск:">
+          </form>
+          <ul class="order-list">
+            <li class="order-item"><a href="">Закладки</a></li>
+            <li class="order-item"><a href="">Корзина</a></li>
+            <li class="order-item"><a href="">Оформить заказ</a></li>
+          </ul>
+        </section>
+      </div>
+    </div>
     <div class="header-shop container">
-      <p class="shop-description">Интернет-магазин строительных материалови инструментов для ремонта</p>
+      <p class="header-shop-description">Интернет-магазин строительных материалови инструментов для ремонта</p>
       <p class="header-contacts">
         <a class="header-phone-number" href="tel:+78005558628">+7 800 555-86-28</a><br>
         <span class="header-address">г. Санкт-Петербург, наб. Реки Карповки, 5 лит П</span>
@@ -48,26 +52,26 @@
       </div>
     </div>
     <nav class="main-navigation container">
-      <ul>
-        <li>
+      <ul class="main-navigation-list">
+        <li class="main-navigation-item">
           <a href="index.html">Главная</a>
         </li>
-        <li>
+        <li class="main-navigation-item">
           <a href="blank.html">Компания</a>
         </li>
-        <li>
+        <li class="main-navigation-item">
           <a href="catalog.html">Каталог</a>
         </li>
-        <li>
+        <li class="main-navigation-item">
           <a href="blank.html">Новости</a>
         </li>
-        <li>
+        <li class="main-navigation-item">
           <a href="blank.html">Спецпредложения</a>
         </li>
-        <li>
+        <li class="main-navigation-item">
           <a href="blank.html">Доставка</a>
         </li>
-        <li>
+        <li class="main-navigation-item">
           <a href="blank.html">Контакты</a>
         </li>
       </ul>
@@ -371,37 +375,37 @@
         <a class="logo">
           <img src="img/technomart-logo.svg" alt="technomart logo">
         </a>
-        <ul>
-          <li>
+        <ul class="footer-navigation-upper-list">
+          <li class="footer-navigation-upper-item">
             <a href="blank.html">Компания</a>
           </li>
-          <li>
+          <li class="footer-navigation-upper-item">
             <a href="blank.html">Новости</a>
           </li>
-          <li>
+          <li class="footer-navigation-upper-item">
             <a href="blank.html">Каталог</a>
           </li>
-          <li>
+          <li class="footer-navigation-upper-item">
             <a href="blank.html">Доставка</a>
           </li>
-          <li>
+          <li class="footer-navigation-upper-item">
             <a href="blank.html">Контакты</a>
           </li>
         </ul>
-        <p>г. Санкт-Петербург, наб. Реки Карповки, 5 лит П<br>
+        <p class="footer-navigation-address">г. Санкт-Петербург, наб. Реки Карповки, 5 лит П<br>
           <a href="tel:+78005558628">+7 800 555-86-28</a>
         </p>
-        <ul class="gold">
-          <li>
+        <ul class="footer-navigation-lower-list gold">
+          <li class="footer-navigation-lower-item">
             <a href="blank.html">Материалы</a>
           </li>
-          <li>
+          <li class="footer-navigation-lower-item">
             <a href="blank.html">Техника</a>
           </li>
-          <li>
+          <li class="footer-navigation-lower-item">
             <a href="blank.html">Инструмент</a>
           </li>
-          <li>
+          <li class="footer-navigation-lower-item">
             <a href="blank.html">Спецпредложения</a>
           </li>
         </ul>
@@ -423,7 +427,7 @@
           </li>
         </ul>
         <div class="footer-contacts-feedback">
-          <p>Обратная связь:<br>
+          <p class="footer-contacts-feedback-email">Обратная связь:<br>
             <a class="gold" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
           </p>
           <p>Разработано-<br>

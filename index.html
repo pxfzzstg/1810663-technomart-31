@@ -11,22 +11,26 @@
   <body class="page-body">
 
   <header class="main-header main-header-margin-bottom">
-    <section class="order-navigation container">
-      <a href="">
-        <img src="img/technomart-text.png" width="108" height="18" alt="technomart logo">
-      </a>
-      <form action="#" method="get">
-        <button type="submit">Search</button>
-        <input type="search" placeholder="Поиск:">
-      </form>
-      <ul>
-        <li><a href="">Закладки</a></li>
-        <li><a href="">Корзина</a></li>
-        <li><a href="">Оформить заказ</a></li>
-      </ul>
-    </section>
-    <div class="container">
-      <p class="shop-description">Интернет-магазин строительных материалови инструментов для ремонта</p>
+    <div class="order-navigation-wrapper">
+      <div class="container">
+        <section class="order-navigation">
+          <a class="order-navigation-logo" href="">
+            <img src="img/technomart-text.png" width="108" height="18" alt="technomart logo">
+          </a>
+          <form action="#" method="get">
+            <!-- <button type="submit">Search</button> -->
+            <input class="search" type="search" placeholder="Поиск:">
+          </form>
+          <ul class="order-list">
+            <li class="order-item"><a href="">Закладки</a></li>
+            <li class="order-item"><a href="">Корзина</a></li>
+            <li class="order-item"><a href="">Оформить заказ</a></li>
+          </ul>
+        </section>
+      </div>
+    </div>
+    <div class="header-shop container">
+      <p class="header-shop-description">Интернет-магазин строительных материалови инструментов для ремонта</p>
       <p class="header-contacts">
         <a class="header-phone-number" href="tel:+78005558628">+7 800 555-86-28</a><br>
         <span class="header-address">г. Санкт-Петербург, наб. Реки Карповки, 5 лит П</span>
@@ -37,26 +41,26 @@
       </div>
     </div>
     <nav class="main-navigation container">
-      <ul>
-        <li>
+      <ul class="main-navigation-list">
+        <li class="main-navigation-item">
           <a href="index.html">Главная</a>
         </li>
-        <li>
+        <li class="main-navigation-item">
           <a href="blank.html">Компания</a>
         </li>
-        <li>
+        <li class="main-navigation-item">
           <a href="catalog.html">Каталог</a>
         </li>
-        <li>
+        <li class="main-navigation-item">
           <a href="blank.html">Новости</a>
         </li>
-        <li>
+        <li class="main-navigation-item">
           <a href="blank.html">Спецпредложения</a>
         </li>
-        <li>
+        <li class="main-navigation-item">
           <a href="blank.html">Доставка</a>
         </li>
-        <li>
+        <li class="main-navigation-item">
           <a href="blank.html">Контакты</a>
         </li>
       </ul>
@@ -117,43 +121,35 @@
         <h2>Популярные товары:</h2>
         <a class="link" href="">все поПулярные товары</a>
       </div>
-      <ul class="catalog-list">
+      <ul class="catalog-list-index">
         <li class="catalog-item">
-          <figure>
-            <a href="">
-              <img src="img/catalog/catalog-BOSCH-BFG-9000.png" width="184" height="164" alt="">
-            </a>
-          </figure>
+          <p class="catalog-item-image">
+            <img src="img/catalog/catalog-BOSCH-BFG-9000.png" width="184" height="164" alt="">
+          </p>
           <p class=product-name>Перфоратор BOSCHBFG 9000</p>
           <p class="initial-price">32500 Р.</p>
           <a class="button-price" href="">25500 Р.</a>
         </li>
         <li class="catalog-item">
-          <figure>
-            <a href="">
-              <img src="img/catalog/catalog-BOSCH-BFG-3000.png" width="127" height="112" alt="">
-            </a>
-          </figure>
+          <p class="catalog-item-image">
+            <img src="img/catalog/catalog-BOSCH-BFG-3000.png" width="127" height="112" alt="">
+          </p>
           <p class=product-name>Перфоратор BOSCHBFG 3000</p>
           <p class="initial-price">22500 Р.</p>
           <a class="button-price href="">15500 Р.</a>
         </li>
         <li class="catalog-item">
-          <figure>
-            <a href="">
-              <img src="img/catalog/catalog-BOSCH-BFG-6000.png" width="144" height="128" alt="">
-            </a>
-          </figure>
+          <p class="catalog-item-image">
+            <img src="img/catalog/catalog-BOSCH-BFG-6000.png" width="144" height="128" alt="">
+          </p>
           <p class=product-name>Перфоратор BOSCHBFG 6000</p>
           <p class="initial-price">30500 Р.</p>
           <a class="button-price href="">25500 Р.</a>
         </li>
         <li class="catalog-item">
-          <figure>
-            <a href="">
-              <img src="img/catalog/catalog-BOSCH-BFG-2000.png" width="127" height="112" alt="">
-            </a>
-          </figure>
+          <p class="catalog-item-image">
+            <img src="img/catalog/catalog-BOSCH-BFG-2000.png" width="127" height="112" alt="">
+          </p>
           <p class=product-name>Перфоратор BOSCHBFG 2000</p>
           <p class="initial-price">22500 Р.</p>
           <a class="button-price href="">12500 Р.</a>
@@ -166,62 +162,30 @@
         <h2>Популярные ПРОИзводители:</h2>
         <a class="link" href="">все производители</a>
       </div>
-      <ul class="catalog-list">
-        <li class="catalog-item">
-          <figure>
-            <a href="">
-              <img src="img/manufactures/bosch.png" width="126" height="37" alt="bosch logo">
-            </a>
-          </figure>
+      <ul class="manufactures-list">
+        <li class="manufacture-item">
+          <img src="img/manufactures/bosch.png" width="126" height="37" alt="bosch logo">
         </li>
-        <li class="catalog-item">
-          <figure>
-            <a href="">
-              <img src="img/manufactures/Makita.png" width="123" height="40" alt="makita logo">
-            </a>
-          </figure>
+        <li class="manufacture-item">
+          <img src="img/manufactures/Makita.png" width="123" height="40" alt="makita logo">
         </li>
-        <li class="catalog-item">
-          <figure>
-            <a href="">
-              <img src="img/manufactures/DeWALT.png" width="146" height="44" alt="dewalt logo">
-            </a>
-          </figure>
+        <li class="manufacture-item">
+          <img src="img/manufactures/DeWALT.png" width="146" height="44" alt="dewalt logo">
         </li>
-        <li class="catalog-item">
-          <figure>
-            <a href="">
-              <img src="img/manufactures/interskol.png" width="200" height="76" alt="интерскол logo">
-            </a>
-          </figure>
+        <li class="manufacture-item">
+          <img src="img/manufactures/interskol.png" width="200" height="76" alt="интерскол logo">
         </li>
-        <li class="catalog-item">
-          <figure>
-            <a href="">
-              <img src="img/manufactures/Hitachi.png" width="169" height="31" alt="hitachi logo">
-            </a>
-          </figure>
+        <li class="manufacture-item">
+          <img src="img/manufactures/Hitachi.png" width="169" height="31" alt="hitachi logo">
         </li>
-        <li class="catalog-item">
-          <figure>
-            <a href="">
-              <img src="img/manufactures/LG.png" width="121" height="73" alt="lg logo">
-            </a>
-          </figure>
+        <li class="manufacture-item">
+          <img src="img/manufactures/LG.png" width="121" height="73" alt="lg logo">
         </li>
-        <li class="catalog-item">
-          <figure>
-            <a href="">
-              <img src="img/manufactures/AEG.png" width="151" height="96" alt="aeg logo">
-            </a>
-          </figure>
+        <li class="manufacture-item">
+          <img src="img/manufactures/AEG.png" width="151" height="96" alt="aeg logo">
         </li>
-        <li class="catalog-item">
-          <figure>
-            <a href="">
-              <img src="img/manufactures/Metabo.png" width="204" height="69" alt="metabo logo">
-            </a>
-          </figure>
+        <li class="manufacture-item">
+          <img src="img/manufactures/Metabo.png" width="204" height="69" alt="metabo logo">
         </li>
       </ul>
     </section>
@@ -293,37 +257,37 @@
         <a class="logo">
           <img src="img/technomart-logo.svg" alt="technomart logo">
         </a>
-        <ul>
-          <li>
+        <ul class="footer-navigation-upper-list">
+          <li class="footer-navigation-upper-item">
             <a href="blank.html">Компания</a>
           </li>
-          <li>
+          <li class="footer-navigation-upper-item">
             <a href="blank.html">Новости</a>
           </li>
-          <li>
+          <li class="footer-navigation-upper-item">
             <a href="blank.html">Каталог</a>
           </li>
-          <li>
+          <li class="footer-navigation-upper-item">
             <a href="blank.html">Доставка</a>
           </li>
-          <li>
+          <li class="footer-navigation-upper-item">
             <a href="blank.html">Контакты</a>
           </li>
         </ul>
-        <p>г. Санкт-Петербург, наб. Реки Карповки, 5 лит П<br>
+        <p class="footer-navigation-address">г. Санкт-Петербург, наб. Реки Карповки, 5 лит П<br>
           <a href="tel:+78005558628">+7 800 555-86-28</a>
         </p>
-        <ul class="gold">
-          <li>
+        <ul class="footer-navigation-lower-list gold">
+          <li class="footer-navigation-lower-item">
             <a href="blank.html">Материалы</a>
           </li>
-          <li>
+          <li class="footer-navigation-lower-item">
             <a href="blank.html">Техника</a>
           </li>
-          <li>
+          <li class="footer-navigation-lower-item">
             <a href="blank.html">Инструмент</a>
           </li>
-          <li>
+          <li class="footer-navigation-lower-item">
             <a href="blank.html">Спецпредложения</a>
           </li>
         </ul>
@@ -345,7 +309,7 @@
           </li>
         </ul>
         <div class="footer-contacts-feedback">
-          <p>Обратная связь:<br>
+          <p class="footer-contacts-feedback-email">Обратная связь:<br>
             <a class="gold" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
           </p>
           <p>Разработано-<br>
