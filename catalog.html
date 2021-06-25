@@ -10,31 +10,33 @@
   </head>
   <body class="page-body">
 
-  <header class="main-header">
+  <header class="main-header main-header-margin-bottom">
     <div class="order-navigation-wrapper">
       <div class="container">
         <section class="order-navigation">
           <a class="order-navigation-logo" href="#">
             <img src="img/technomart-text.png" width="108" height="18" alt="technomart logo">
           </a>
-          <form action="#" method="get">
+          <form class="search-form" action="#" method="get">
             <!-- <button type="submit">Search</button> -->
             <input class="search" type="search" placeholder="Поиск:">
           </form>
           <ul class="order-list">
-            <li class="order-item"><a href="#">Закладки</a></li>
-            <li class="order-item"><a href="#">Корзина</a></li>
-            <li class="order-item"><a href="#">Оформить заказ</a></li>
+            <li class="order-item"><a class="order-item-bookmark" href="#">Закладки: 0</a></li>
+            <li class="order-item"><a class="order-item-cart" href="#">Корзина: 0</a></li>
+            <li class="order-item"><a class="order-item-checkout" href="#">Оформить заказ</a></li>
           </ul>
         </section>
       </div>
     </div>
     <div class="header-shop container">
       <p class="header-shop-description">Интернет-магазин строительных материалови инструментов для ремонта</p>
-      <p class="header-contacts">
-        <a class="header-phone-number" href="tel:+78005558628">+7 800 555-86-28</a><br>
+      <div class="header-contacts">
+        <div class="header-phone-number-container">
+          <a class="header-phone-number" href="tel:+78005558628">+7 800 555-86-28</a>
+        </div>
         <span class="header-address">г. Санкт-Петербург, наб. Реки Карповки, 5 лит П</span>
-      </p>
+      </div>
       <div class="header-login">
         <!-- different from index.html -->
         <!-- start -->
@@ -415,17 +417,26 @@
       <section class="footer-contacts container">
         <p>© 2010–2021 Компания «Техномарт»<br>
           Все права защищены</p>
-        <ul class="social-list">
-          <li class="social-item">
-            <a href="#">vk</a>
-          </li>
-          <li class="social-item">
-            <a href="#">fb</a>
-          </li>
-          <li class="social-item">
-            <a href="#">instagram</a>
-          </li>
-        </ul>
+          <ul class="social-list">
+            <li class="social-item">
+              <a href="#">
+                <span class="visually-hidden">vk</span>
+                <img src="img/icon-vk.svg" alt="vk-logo">
+              </a>
+            </li>
+            <li class="social-item">
+              <a href="#">
+                <span class="visually-hidden">fb</span>
+                <img src="img/icon-fb.svg" alt="fb-logo">
+              </a>
+            </li>
+            <li class="social-item">
+              <a href="#">
+                <span class="visually-hidden">instagram</span>
+                <img src="img/icon-insta.svg" alt="insta-logo">
+              </a>
+            </li>
+          </ul>
         <div class="footer-contacts-feedback">
           <p class="footer-contacts-feedback-email">Обратная связь:<br>
             <a class="gold" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
