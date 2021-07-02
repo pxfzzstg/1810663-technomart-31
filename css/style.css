@@ -31,6 +31,7 @@
     --purchase-active: #518534;
     --light-shade-grey: #E5E5E5;
     --lighter-grey: #F4F4F4;
+    --special-grey: #F1F1F1
 }
 
 /* Global */
@@ -1836,4 +1837,73 @@ img {
 
 .modal-map iframe {
     border: none;
+}
+
+/* Modal Cart */
+
+.modal-cart {
+    width: 620px;
+    height: 282px;
+    display: grid;
+    grid-template-rows: 1fr min-content;
+}
+
+.modal-cart-top {
+    font-size: 24px;
+    line-height: 30px;
+    padding: 0;
+    margin: 0;
+    min-height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.modal-cart-top::before {
+    content: "";
+    position: absolute;
+    width: 66px;
+    height: 66px;
+    background-image: url("../img/icon-mark.svg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    top: 55px;
+    left: 81px;
+}
+
+.modal-cart-bottom {
+    background-color: var(--special-grey);
+    padding: 37px 113px;
+    display: flex;
+}
+
+.cart-button {
+    width: 192px;
+    height: 38px;
+    padding: 0;
+    border: none;
+}
+
+.cart-button:not(:last-of-type) {
+    margin-right: 10px;
+}
+
+.checkout-button {
+    background-color: var(--basic-red);
+    color: var(--white);
+    font-size: 14px;
+    line-height: 18px;
+}
+
+.checkout-button:hover {
+    background-color: var(--basic-red-hover);
+}
+
+.checkout-button:active {
+    background-color: var(--error);
+}
+
+.continue-button {
+    background-color: var(--white);
 }
