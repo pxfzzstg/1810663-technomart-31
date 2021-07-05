@@ -1842,9 +1842,10 @@ img {
 /* Modal Cart */
 
 .modal-cart {
+    display: none;
     width: 620px;
     height: 282px;
-    display: grid;
+    /* display: grid; */
     grid-template-rows: 1fr min-content;
 }
 
