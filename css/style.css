@@ -1084,7 +1084,7 @@ img {
     padding-bottom: 54px;
 }
 
-.footer-navigation-address {
+.footer-navigation-address p {
     padding: 0;
     margin: 0;
 }
@@ -1164,12 +1164,21 @@ img {
 
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+    padding-top: 32px;
+    padding-bottom: 32px;
+}
+
+.footer-contacts-copyright p {
+    padding: 0;
+    margin: 0;
 }
 
 .social-list {
     list-style: none;
     justify-self: center;
     display: flex;
+    margin: 0;
+    padding: 0;
 }
 
 .social-item:not(:last-of-type) {
@@ -1200,6 +1209,16 @@ img {
 
 .footer-contacts-feedback-email {
     margin-right: 51px;
+}
+
+.footer-contacts-feedback-email p {
+    padding: 0;
+    margin: 0;
+}
+
+.footer-contacts-feedback-site p {
+    padding: 0;
+    margin: 0;
 }
 
 .requisite:hover {
