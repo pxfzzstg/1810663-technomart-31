@@ -15,7 +15,7 @@
       <div class="container">
         <section class="order-navigation">
           <h2 class="visually-hidden">Навигация по заказам</h2>
-          <a class="order-navigation-logo" href="#">
+          <a class="order-navigation-logo" href="index.html">
             <img src="img/technomart-text.png" width="108" height="18" alt="technomart logo">
           </a>
           <form class="search-form" action="#" method="get">
@@ -44,7 +44,15 @@
       <div class="header-account">
         <!-- different from index.html -->
         <!-- start -->
-        <a class="account" href="#">Равшан Джамшутович</a>      
+        <div class="account-wrapper">
+          <a class="account" href="#">Равшан Джамшутович</a>
+          <a class="logout" href="#">
+            <svg width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M14.1667 9L5.71429 0.5V6.5H0V11.5H5.71429V17.5L14.1667 9Z" fill="#C5C5C5"/>
+              <path d="M16.1771 15.51H11.3895V17.5H16.1771C18.2514 17.5 19.0381 15.69 19.0619 14.474V3.528C19.0381 2.311 18.2514 0.5 16.1771 0.5H11.3895V2.49H16.1771C16.9762 2.49 17.1219 3.171 17.1391 3.547V14.451C17.1229 14.827 16.9762 15.51 16.1771 15.51Z" fill="#C5C5C5"/>
+            </svg>              
+          </a>
+        </div>
         <ul class="profile-list">
           <li class="profile-item">
             <a href="#">Мои заказы</a>
@@ -109,18 +117,32 @@
         <h2 class="visually-hidden">Каталог</h2>
         <section class="filters">
           <h3>ФИЛЬТР:</h3>
-          <form action="#" method="get">
+          <form action="https://echo.htmlacademy.ru/" method="get">
             <fieldset class="filters-price">
               <legend>ЦЕНА:</legend>
+              <div class="range-controls">
+                <div class="scale">
+                  <div class="bar" style="
+                    width: 30%;
+                    margin-left: 20%
+                  "></div>
+                </div>
+                <div class="toggle toggle-min" tabindex="0" style="
+                  left: 20%
+                "></div>
+                <div class="toggle toggle-max" tabindex="0" style="
+                  left: 50%
+                "></div>
+              </div>
               <ul class="filters-price-list">
                 <li class="filters-price-item">
                   <label>
-                    <input type="text" value="0">
+                    <input type="number" name="min-price" value="0">
                   </label>
                 </li>
                 <li class="filters-price-item">
                   <label>
-                    <input type="text" value="3000">
+                    <input type="number" name="max-price" value="3000">
                   </label>
                 </li>
               </ul>
@@ -151,11 +173,11 @@
             <fieldset class="filters-power">
               <legend>ПИТАНИЕ:</legend>
               <label class="filter-option filter-radio">
-                <input class="visually-hidden filter-input-radio" type="radio" name="manufacturer" checked value="АККУМУЛЯТОРНЫЕ">
+                <input class="visually-hidden filter-input-radio" type="radio" name="power" checked value="АККУМУЛЯТОРНЫЕ">
                 <span>АККУМУЛЯТОРНЫЕ</span>
               </label>
               <label class="filter-option filter-radio">
-                <input class="visually-hidden filter-input-radio" type="radio" name="manufacturer" value="СЕТЕВЫЕ">
+                <input class="visually-hidden filter-input-radio" type="radio" name="power" value="СЕТЕВЫЕ">
                 <span>СЕТЕВЫЕ</span>
               </label>
             </fieldset>
@@ -432,7 +454,7 @@
               Разработано —
             </p>
             <p>
-              <a class="gold" href="https://htmlacademy.ru">htmlacademy.ru</a>
+              <a class="gold" href="https://htmlacademy.ru/intensive/htmlcss">htmlacademy.ru</a>
             </p>
           </div>
         </div>
