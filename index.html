@@ -18,12 +18,13 @@
           <a class="order-navigation-logo" href="index.html">
             <img src="img/technomart-text.png" width="108" height="18" alt="technomart logo">
           </a>
-          <form class="search-form" action="#" method="get">
-            <!-- <button type="submit">Search</button> -->
-            <input class="search" type="search" placeholder="Поиск:">
-            <svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path fill-rule="evenodd" clip-rule="evenodd" d="M13.458 12.044L17 15.586L15.586 17L12.044 13.458C10.782 14.421 9.21 15 7.5 15C3.35786 15 0 11.6421 0 7.5C0 3.35786 3.35786 0 7.5 0C11.6421 0 15 3.35786 15 7.5C15.0001 9.14309 14.4581 10.7403 13.458 12.044ZM7.5 2C4.467 2 2 4.467 2 7.5C2.00331 10.5362 4.4638 12.9967 7.5 13C10.532 13 13 10.532 13 7.5C13 4.467 10.532 2 7.5 2Z" fill="white"/>
-            </svg>              
+          <form class="search-form" action="https://echo.htmlacademy.ru/" method="get">
+            <input class="search" type="search" name="search" placeholder="Поиск:">
+            <button class="button-search" type="submit">
+              <svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M13.458 12.044L17 15.586L15.586 17L12.044 13.458C10.782 14.421 9.21 15 7.5 15C3.35786 15 0 11.6421 0 7.5C0 3.35786 3.35786 0 7.5 0C11.6421 0 15 3.35786 15 7.5C15.0001 9.14309 14.4581 10.7403 13.458 12.044ZM7.5 2C4.467 2 2 4.467 2 7.5C2.00331 10.5362 4.4638 12.9967 7.5 13C10.532 13 13 10.532 13 7.5C13 4.467 10.532 2 7.5 2Z" fill="white"/>
+              </svg>              
+            </button>
           </form>
           <ul class="order-list">
             <li class="order-item"><a class="order-item-bookmark" href="#">Закладки: 0</a></li>
@@ -98,8 +99,16 @@
           <a href="#">Бесплатно</a>
         </li>
         <li class="catalog">
-          <h3>Перфораторы</h3>
-          <p>Настоящие мужские игрушки</p>
+          <ul class="tools-list">
+            <li class="perforator-tool">
+              <h3>Перфораторы</h3>
+              <p>Настоящие мужские игрушки</p>
+            </li>
+            <li class="drill-tool">
+              <h3>Дрели</h3>
+              <p>Соседям на радость!</p>
+            </li>
+          </ul>
           <a class="button-action button-open-catalog" href="catalog.html">ОТКРЫТЬ КАТАЛОГ</a>
           <button class="button-carousel button-carousel-left" type="button">
             <img src="img/icon-left.svg" alt="carousel-left">
@@ -107,6 +116,10 @@
           <button class="button-carousel button-carousel-right" type="button">
             <img src="img/icon-right.svg" alt="carousel-right">
           </button>
+          <div class="slider-controls">
+            <button type="button"></button>
+            <button class="current" type="button"></button>
+          </div>
         </li>
       </ul>
     </section>
@@ -219,11 +232,28 @@
             </li>
           </ul>
           <div class="services-column-2">
-            <h3>Доставка</h3>
+            <h3 class="shipping-service">Доставка</h3>
             <p class="services-description">Мы с удовольствием доставим ваш товар прямо<br>
               к вашему подъезду совершенно бесплатно!<br>
               Ведь мы неплохо заработаем,<br>
               поднимая его на ваш этаж!</p>
+          </div>
+          <div class="services-column-2">
+            <h3 class="guarantee-service">Гарантия</h3>
+            <p class="services-description">
+              Если купленный у нас товар поломается или заискрит,<br>
+              а также в случае пожара, спровоцированного его<br>
+              возгоранием, вы всегда можете быть уверены в нашей<br>
+              гарантии. Мы обменяем сгоревший товар на новый.<br>
+              Дом уж восстановите как-нибудь сами.
+            </p>
+          </div>
+          <div class="services-column-2">
+            <h3 class="credit-service">Кредит</h3>
+            <p class="services-description">
+              Залезть в долговую яму стало проще!<br>
+              Кредитные консультанты придут вам на помощь.
+            </p>
           </div>
         </div>
       </div>
@@ -366,21 +396,21 @@
 
   <section class="modal modal-feedback">
     <h2 class="visually-hidden">Напишите нам</h2>
-    <form class="modal-feedback-form" action="#" method="post">
+    <form class="modal-feedback-form" action="https://echo.htmlacademy.ru/" method="post">
       <div class="modal-feedback-top">
         <ul class="contacts-list">
           <li class="contact-item">
             <label>Ваше имя:</label>
-            <input type="text" placeholder="Имя Фамилия">
+            <input type="text" name="name" placeholder="Имя Фамилия">
           </li>
           <li class="contact-item">
             <label>Ваш e-mail:</label>
-            <input type="email" placeholder="email@example.com">
+            <input type="email" name="email" placeholder="email@example.com">
           </li>
         </ul>
         <p>
           <label>Текст письма:</label>
-          <textarea class="contact-textarea" placeholder="В свободной форме"></textarea>
+          <textarea class="contact-textarea" name="feedback" placeholder="В свободной форме"></textarea>
         </p>
       </div>
       <div class="modal-feedback-bottom">
