@@ -358,7 +358,6 @@ img {
     height: 45px;
     border: 3px solid var(--white);
     position: relative;
-    margin-bottom: 3px;
 }
 
 .header-phone-number {
@@ -366,8 +365,8 @@ img {
     line-height: 30px;
     color: var(--basic-red);
     position: absolute;
-    top: 7px;
-    left: 74px;
+    top: 5px;
+    left: 71px;
 }
 .header-phone-number-container::before {
     content: "";
@@ -375,8 +374,8 @@ img {
     background-image: url("../img/icon-phone.svg");
     width: 19px;
     height: 19px;
-    top: 13px;
-    left: 40px;
+    top: 11px;
+    left: 38px;
 }
 
 .header-address {
@@ -698,6 +697,16 @@ img {
     border: none;
 }
 
+.button-popular-products {
+    padding-left: 24px;
+    padding-right: 24px;
+}
+
+.button-manufactures {
+    padding-left: 39px;
+    padding-right: 38px;
+}
+
 .slider-controls {
     display: flex;
     justify-content: space-between;
@@ -778,6 +787,10 @@ img {
     text-transform: uppercase;
 }
 
+.popular-manufactures {
+    margin-top: 71px;
+}
+
 .catalog-list-index {
     list-style: none;
     margin: 0;
@@ -793,7 +806,7 @@ img {
     padding: 0;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    margin-bottom: 48px;
+    margin-bottom: 57px;
     gap: 20px;
 }
 
@@ -836,11 +849,13 @@ img {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 6px;
-    margin-bottom: 8px;
+    margin-top: 3px;
+    margin-bottom: 11px;
+    position: relative;
 }
 
 .catalog-item .product-name {
+    width: 185px;
     font-size: 18px;
     line-height: 20px;
     font-weight: bold;
@@ -857,12 +872,14 @@ img {
     text-decoration: line-through;
     margin: 0;
     margin-bottom: 23px;
+    min-height: 18px;
 }
 
 .button-purchase {
     background-color: var(--basic-green);
     font-size: 14px;
     line-height: 18px;
+    font-family: 'Cuprum', Arial, sans-serif;
     color: var(--white);
     text-transform: uppercase;
     width: 135px;
@@ -874,6 +891,7 @@ img {
     margin-top: 32px;
     margin-bottom: 10px;
     cursor: pointer;
+    position: relative;
 }
 
 .button-purchase:hover {
@@ -884,10 +902,23 @@ img {
     background-color: var(--purchase-active);
 }
 
+.button-purchase::before {
+    content: "";
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    background-image: url('../img/icon-cart-mini.svg');
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    top: 0;
+    left: 0;
+}
+
 .button-save {
     background-color: var(--white);
     font-size: 14px;
     line-height: 18px;
+    font-family: 'Cuprum', Arial, sans-serif;
     color: var(--dark);
     text-transform: uppercase;
     width: 135px;
@@ -913,6 +944,7 @@ img {
     line-height: 18px;
     color: var(--white);
     position: relative;
+    margin-bottom: 10px;
 }
 
 .button-price::before {
@@ -963,7 +995,7 @@ img {
 /* Services */
 .services {
     background-color: var(--basic-background);
-    padding: 64px 0 100px 0;
+    padding: 40px 0 88px 0;
 }
 
 .services-columns {
@@ -985,13 +1017,15 @@ img {
     font-family: 'PT Sans', Arial, sans-serif;;
     font-size: 13px;
     line-height: 24px;
-    margin-bottom: 70px;
+    margin-bottom: 40px;
 }
 
 .services-list {
     list-style: none;
     padding: 0;
+    margin: 0;
     position: relative;
+    margin-top: 26px;
 }
 
 .services-list::before {
@@ -1012,7 +1046,7 @@ img {
     font-size: 21px;
     line-height: 30px;
     font-weight: bold;
-    padding: 17.5px 139px 13.5px 22px;
+    padding: 18px 139px 15px 22px;
     margin: 0;
     box-shadow: 0px 1px 0px var(--darker), inset 0px 1px 0px var(--darker-shadow);
     cursor: pointer;
@@ -1081,7 +1115,7 @@ img {
 .about-company {
     display: grid;
     grid-template-columns: 1fr min-content;
-    margin-top: 70px;
+    margin-top: 46px;
     margin-bottom: 70px;
 }
 
@@ -1097,18 +1131,18 @@ img {
     margin: 0;
     font-size: 13px;
     line-height: 24px;
-    font-family: 'Cuprum', Arial, sans-serif;
+    font-family: 'PT Sans', Arial, sans-serif;
 }
 
 .about-company-text:first-of-type {
-    margin-bottom: 40px;
+    margin-bottom: 26px;
 }
 
 .about-company-list {
     list-style: none;
     padding: 0;
     margin: 0;
-    margin-bottom: 27px;
+    margin-bottom: 20px;
 }
 
 .about-company-item {
@@ -1137,12 +1171,17 @@ img {
     left: 0;
 }
 
+.button-about-company {
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
 .about-company-column-1 a {
     display: inline-block;
 }
 
 .about-company img {
-    margin-bottom: 33px;
+    margin-bottom: 26px;
     cursor: pointer;
 }
 
@@ -1451,7 +1490,7 @@ img {
 .main-catalog {
     display: grid;
     grid-template-columns: 220px 1fr;
-    margin-bottom: 59px;
+    margin-bottom: 70px;
     gap: 21px;
 }
 
@@ -1519,7 +1558,7 @@ img {
     line-height: 30px;
     font-family: 'PT Sans', Arial, sans-serif;
     font-weight: bold;
-    margin-bottom: 17px;
+    margin-bottom: 13px;
 }
 
 .filters-price input {
@@ -1558,8 +1597,8 @@ img {
 
 .range-controls {
     position: relative;
-    height: 41px;
-    margin-bottom: 15px;
+    height: 40px;
+    margin-bottom: 10px;
     padding-top: 39px;
     padding-right: 20px;
     padding-left: 20px;
@@ -1682,9 +1721,10 @@ img {
     border: 1px solid var(--basic-red);
 }
 
-.filters-manufactures {
+.filters .filters-manufactures {
     display: flex;
     flex-direction: column;
+    margin-bottom: 49px;
 }
 
 .filters-manufactures label:not(:last-of-type) {
@@ -1694,6 +1734,10 @@ img {
 .filters-power {
     display: flex;
     flex-direction: column;
+}
+
+.filters-power legend {
+    margin-bottom: 24px;
 }
 
 .filters-power label:not(:last-of-type) {
@@ -1733,7 +1777,7 @@ img {
     margin-right: 21px;
 }
 
-.sort-order-item:not(:last-of-type) svg {
+.sort-order-item:not(:first-of-type) svg {
     transform: rotate(180deg);
 }
 
@@ -1775,10 +1819,11 @@ img {
 }
 
 .pagination-item:not(:last-of-type) {
-    margin-right: 10px;
+    margin-right: 9px;
 }
 
 .pagination-item a {
+    font-family: 'PT Sans', Arial, sans-serif;
     font-size: 13px;
     line-height: 18px;
     text-transform: uppercase;
@@ -1786,6 +1831,11 @@ img {
     padding: 10px 15px 10px 15px;
     border: 1px solid var(--light-shade-grey);
     border-radius: 2px;
+}
+
+.pagination-item-next a {
+    padding-left: 30px;
+    padding-right: 30px;
 }
 
 .pagination-item a:hover {
@@ -1804,7 +1854,7 @@ img {
 .summary-wrapper {
     background-color: var(--basic-background);
     display: grid;
-    padding-bottom: 67px;
+    padding-bottom: 46px;
     padding-top: 64px;
 }
 
@@ -1824,6 +1874,8 @@ img {
     font-size: 13px;
     line-height: 24px;
     font-family: 'PT Sans', Arial, sans-serif;
+    padding: 24px 0;
+    margin: 0;
 }
 
 /* Modal */
