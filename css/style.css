@@ -905,13 +905,13 @@ img {
 .button-purchase::before {
     content: "";
     position: absolute;
-    width: 15px;
-    height: 15px;
+    width: 23px;
+    height: 23px;
     background-image: url("../img/icon-cart-mini.svg");
     background-repeat: no-repeat;
     background-position: 0 0;
-    top: 0;
-    left: 0;
+    top: 10px;
+    left: 22px;
 }
 
 .button-save {
@@ -1536,20 +1536,18 @@ img {
     margin-right: 140px;
 }
 
-.button-sort-order {
+.link-sort-order {
     background-color: transparent;
-    padding: 0;
-    border: none;
     width: 12px;
     height: 10px;
     cursor: pointer;
 }
 
-.button-sort-order:hover path {
+.link-sort-order:hover path {
     fill: var(--basic-black);
 }
 
-.button-sort-order:active path {
+.link-sort-order:active path {
     fill: var(--basic-red);
 }
 
@@ -1781,7 +1779,7 @@ img {
     transform: rotate(180deg);
 }
 
-.button-sort-by {
+.link-sort-by {
     font-family: "PT Sans", Arial, sans-serif;
     font-size: 13px;
     line-height: 18px;
@@ -1790,18 +1788,16 @@ img {
     color: rgba(0, 0, 0, 0.3);
     text-transform: uppercase;
     background-color: transparent;
-    padding: 0;
-    border: none;
     cursor: pointer;
 }
 
-.button-sort-by:hover {
+.link-sort-by:hover {
     color: var(--basic-black);
     text-decoration-style: solid;
     text-decoration-color: var(--basic-red);
 }
 
-.button-sort-by:active {
+.link-sort-by:active {
     color: var(--basic-red);
     text-decoration: none;
 }
