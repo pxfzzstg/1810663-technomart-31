@@ -20,6 +20,7 @@
           </a>
           <form class="search-form" action="https://echo.htmlacademy.ru/" method="get">
             <input class="search" type="search" name="search" placeholder="Поиск:">
+            <label class="visually-hidden" for="search">Поиск</label>
             <button class="button-search" type="submit">
               <svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path fill-rule="evenodd" clip-rule="evenodd" d="M13.458 12.044L17 15.586L15.586 17L12.044 13.458C10.782 14.421 9.21 15 7.5 15C3.35786 15 0 11.6421 0 7.5C0 3.35786 3.35786 0 7.5 0C11.6421 0 15 3.35786 15 7.5C15.0001 9.14309 14.4581 10.7403 13.458 12.044ZM7.5 2C4.467 2 2 4.467 2 7.5C2.00331 10.5362 4.4638 12.9967 7.5 13C10.532 13 13 10.532 13 7.5C13 4.467 10.532 2 7.5 2Z" fill="white"/>
@@ -111,10 +112,10 @@
           </ul>
           <a class="button-action button-open-catalog" href="catalog.html">ОТКРЫТЬ КАТАЛОГ</a>
           <button class="button-carousel button-carousel-left" type="button">
-            <img src="img/icon-left.svg" alt="carousel-left">
+            <img src="img/icon-left.svg" width="22" height="40" alt="carousel-left">
           </button>
           <button class="button-carousel button-carousel-right" type="button">
-            <img src="img/icon-right.svg" alt="carousel-right">
+            <img src="img/icon-right.svg" width="22" height="40" alt="carousel-right">
           </button>
           <div class="slider-controls">
             <button type="button"></button>
@@ -130,7 +131,7 @@
         <a class="button-action button-popular-products" href="#">все поПулярные товары</a>
       </div>
       <ul class="catalog-list-index">
-        <li class="catalog-item">
+        <li class="catalog-item" tabindex="0">
           <div class="catalog-item-buttons">
             <button class="button-purchase" type="button">КУПИТЬ</button>
             <button class="button-save" type="button">В закладки</button>
@@ -142,7 +143,7 @@
           <p class="initial-price">32500 Р.</p>
           <p class="button-price">25500 Р.</p>
         </li>
-        <li class="catalog-item label-new">
+        <li class="catalog-item label-new" tabindex="0">
           <div class="catalog-item-buttons">
             <button class="button-purchase" type="button">КУПИТЬ</button>
             <button class="button-save" type="button">В закладки</button>
@@ -154,7 +155,7 @@
           <p class="initial-price">22500 Р.</p>
           <p class="button-price">15500 Р.</p>
         </li>
-        <li class="catalog-item">
+        <li class="catalog-item" tabindex="0">
           <div class="catalog-item-buttons">
             <button class="button-purchase" type="button">КУПИТЬ</button>
             <button class="button-save" type="button">В закладки</button>
@@ -166,7 +167,7 @@
           <p class="initial-price">30500 Р.</p>
           <p class="button-price">25500 Р.</p>
         </li>
-        <li class="catalog-item label-new">
+        <li class="catalog-item label-new" tabindex="0">
           <div class="catalog-item-buttons">
             <button class="button-purchase" type="button">КУПИТЬ</button>
             <button class="button-save" type="button">В закладки</button>
@@ -221,7 +222,7 @@
           Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.</p>
         <div class="services-columns">
           <ul class="services-list">
-            <li class="service-item">
+            <li class="service-item service-item-active">
               <p>Доставка</p>
             </li>
             <li class="service-item">
@@ -287,8 +288,10 @@
       <div class="about-company-column-2">
         <h2>КОНТАКТЫ</h2>
         <p class="about-company-text">Вы можете забрать товар сами,<br>заехав в наш офис:</p>
-        <img src="img/map.png" alt="Карта" width="300" height="158">
-        <button class="button-action button-contact" type="button">Заблудились? НапиШИТЕ НАМ!</button>
+        <a href="map.html">
+          <img src="img/map.png" alt="Карта" width="300" height="158">
+        </a>
+        <a class="button-action button-contact" href="feedback.html">Заблудились? НапиШИТЕ НАМ!</a>
       </div>
     </section>
   </main>
@@ -298,7 +301,7 @@
       <section class="footer-navigation container">
         <h2 class="visually-hidden">Навигация</h2>
         <a class="logo">
-          <img src="img/technomart-logo.svg" alt="technomart logo">
+          <img src="img/technomart-logo.svg" width="138" height="23" alt="technomart logo">
         </a>
         <ul class="footer-navigation-upper-list">
           <li class="footer-navigation-upper-item">
@@ -356,19 +359,19 @@
             <li class="social-item">
               <a href="#">
                 <span class="visually-hidden">vk</span>
-                <img src="img/icon-vk.svg" alt="vk-logo">
+                <img src="img/icon-vk.svg" width="26" height="15" alt="vk-logo">
               </a>
             </li>
             <li class="social-item">
               <a href="#">
                 <span class="visually-hidden">fb</span>
-                <img src="img/icon-fb.svg" alt="fb-logo">
+                <img src="img/icon-fb.svg" width="12" height="22" alt="fb-logo">
               </a>
             </li>
             <li class="social-item">
               <a href="#">
                 <span class="visually-hidden">instagram</span>
-                <img src="img/icon-insta.svg" alt="insta-logo">
+                <img src="img/icon-insta.svg" width="21" height="21" alt="insta-logo">
               </a>
             </li>
           </ul>
@@ -378,7 +381,7 @@
               Обратная связь:
             </p>
             <p>
-              <a class="gold" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+              <a class="requisite gold" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
             </p>
           </div>
           <div class="footer-contacts-feedback-site">
@@ -386,7 +389,7 @@
               Разработано —
             </p>
             <p>
-              <a class="gold" href="https://htmlacademy.ru/intensive/htmlcss">htmlacademy.ru</a>
+              <a class="requisite gold" href="https://htmlacademy.ru/intensive/htmlcss">htmlacademy.ru</a>
             </p>
           </div>
         </div>
@@ -400,17 +403,17 @@
       <div class="modal-feedback-top">
         <ul class="contacts-list">
           <li class="contact-item">
-            <label>Ваше имя:</label>
-            <input type="text" name="name" placeholder="Имя Фамилия">
+            <label for="feedback-name">Ваше имя:</label>
+            <input type="text" id="feedback-name" name="name" placeholder="Имя Фамилия">
           </li>
           <li class="contact-item">
-            <label>Ваш e-mail:</label>
-            <input type="email" name="email" placeholder="email@example.com">
+            <label for="feedback-email" >Ваш e-mail:</label>
+            <input type="email" id="feedback-email" name="email" placeholder="email@example.com">
           </li>
         </ul>
         <p>
-          <label>Текст письма:</label>
-          <textarea class="contact-textarea" name="feedback" placeholder="В свободной форме"></textarea>
+          <label for="feedback-text">Текст письма:</label>
+          <textarea class="contact-textarea" id="feedback-text" name="feedback" placeholder="В свободной форме"></textarea>
         </p>
       </div>
       <div class="modal-feedback-bottom">
@@ -420,16 +423,12 @@
     <button class="modal-close" type="submit" aria-label="Закрыть"></button>
   </section>
 
-  <script src="js/feedback.js"></script>
-
   <section class="modal modal-map">
     <h2 class="visually-hidden">Карта</h2>
     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037999040354!2d30.322010416394033!3d59.938716271971415!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2sBolshaya+Konyushennaya+ul.%2C+19%2C+Sankt-Peterburg%2C+Russia%2C+191186!5e0!3m2!1sen!2s!4v1441888483426" width="943" height="449" allowfullscreen title="Офис компании по адресу набережная реки Карповки, 5, литера П, Санкт-Петербург">
     </iframe>
     <button class="modal-close" type="button" aria-label="Закрыть"></button>
   </section>
-
-  <script src="js/map.js"></script>
 
   <section class="modal modal-cart">
     <h2 class="modal-cart-top">
@@ -442,6 +441,8 @@
     <button class="modal-close" type="button" aria-label="Закрыть"></button>
   </section>
 
+  <script src="js/feedback.js"></script>
+  <script src="js/map.js"></script>
   <script src="js/cart.js"></script>
 
   </body>

@@ -19,7 +19,8 @@
             <img src="img/technomart-text.png" width="108" height="18" alt="technomart logo">
           </a>
           <form class="search-form" action="https://echo.htmlacademy.ru/" method="get">
-            <input class="search" type="search" name="search" placeholder="Поиск:">
+            <input class="search" type="search" id="search" name="search" placeholder="Поиск:">
+            <label class="visually-hidden" for="search">Поиск</label>
             <button class="button-search" type="submit">
               <svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path fill-rule="evenodd" clip-rule="evenodd" d="M13.458 12.044L17 15.586L15.586 17L12.044 13.458C10.782 14.421 9.21 15 7.5 15C3.35786 15 0 11.6421 0 7.5C0 3.35786 3.35786 0 7.5 0C11.6421 0 15 3.35786 15 7.5C15.0001 9.14309 14.4581 10.7403 13.458 12.044ZM7.5 2C4.467 2 2 4.467 2 7.5C2.00331 10.5362 4.4638 12.9967 7.5 13C10.532 13 13 10.532 13 7.5C13 4.467 10.532 2 7.5 2Z" fill="white"/>
@@ -130,10 +131,12 @@
                 </div>
                 <div class="toggle toggle-min" tabindex="0" style="
                   left: 8%
-                "></div>
+                "
+                aria-label="Минимальная цена"></div>
                 <div class="toggle toggle-max" tabindex="0" style="
                   left: 72%
-                "></div>
+                "
+                aria-label="Максимальная цена"></div>
               </div>
               <ul class="filters-price-list">
                 <li class="filters-price-item">
@@ -201,14 +204,14 @@
             </ul>
             <ul class="sort-order-list">
               <li class="sort-order-item">
-                <a class="link-sort-order">
+                <a class="link-sort-order" aria-label="Сортировать по возрастанию">
                   <svg width="12" height="10" viewBox="0 0 12 10" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M5.66241 0L11.1624 10L0.162415 10" fill="#C5C5C5"/>
                   </svg>
                 </a>
               </li>
               <li class="sort-order-item">
-                <a class="link-sort-order">
+                <a class="link-sort-order" aria-label="Сортировать по убыванию">
                   <svg width="12" height="10" viewBox="0 0 12 10" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M5.66241 0L11.1624 10L0.162415 10" fill="#C5C5C5"/>
                   </svg>                    
@@ -218,7 +221,7 @@
           </div>
           <ul class="catalog-list">
             <!-- 1 -->
-            <li class="catalog-item">
+            <li class="catalog-item" tabindex="0">
               <div class="catalog-item-buttons">
                 <button class="button-purchase" type="button">КУПИТЬ</button>
                 <button class="button-save" type="button">В закладки</button>
@@ -231,7 +234,7 @@
               <p class="button-price">25500 Р.</p>
             </li>
             <!-- 2 -->
-            <li class="catalog-item">
+            <li class="catalog-item" tabindex="0">
               <div class="catalog-item-buttons">
                 <button class="button-purchase" type="button">КУПИТЬ</button>
                 <button class="button-save" type="button">В закладки</button>
@@ -244,7 +247,7 @@
               <p class="button-price">25500 Р.</p>
             </li>
             <!-- 3 -->
-            <li class="catalog-item label-new">
+            <li class="catalog-item label-new" tabindex="0">
               <div class="catalog-item-buttons">
                 <button class="button-purchase" type="button">КУПИТЬ</button>
                 <button class="button-save" type="button">В закладки</button>
@@ -257,7 +260,7 @@
               <p class="button-price">25500 Р.</p>
             </li>
             <!-- 4 -->
-            <li class="catalog-item label-new">
+            <li class="catalog-item label-new" tabindex="0">
               <div class="catalog-item-buttons">
                 <button class="button-purchase" type="button">КУПИТЬ</button>
                 <button class="button-save" type="button">В закладки</button>
@@ -270,7 +273,7 @@
               <p class="button-price">15500 Р.</p>
             </li>
             <!-- 5 -->
-            <li class="catalog-item">
+            <li class="catalog-item" tabindex="0">
               <div class="catalog-item-buttons">
                 <button class="button-purchase" type="button">КУПИТЬ</button>
                 <button class="button-save" type="button">В закладки</button>
@@ -283,7 +286,7 @@
               <p class="button-price">25500 Р.</p>
             </li>
             <!-- 6 -->
-            <li class="catalog-item label-new">
+            <li class="catalog-item label-new" tabindex="0">
               <div class="catalog-item-buttons">
                 <button class="button-purchase" type="button">КУПИТЬ</button>
                 <button class="button-save" type="button">В закладки</button>
@@ -296,7 +299,7 @@
               <p class="button-price">12500 Р.</p>
             </li>
             <!-- 7 -->
-            <li class="catalog-item label-new">
+            <li class="catalog-item label-new" tabindex="0">
               <div class="catalog-item-buttons">
                 <button class="button-purchase" type="button">КУПИТЬ</button>
                 <button class="button-save" type="button">В закладки</button>
@@ -309,7 +312,7 @@
               <p class="button-price">15500 Р.</p>
             </li>
             <!-- 8 -->
-            <li class="catalog-item">
+            <li class="catalog-item" tabindex="0">
               <div class="catalog-item-buttons">
                 <button class="button-purchase" type="button">КУПИТЬ</button>
                 <button class="button-save" type="button">В закладки</button>
@@ -322,7 +325,7 @@
               <p class="button-price">25500 Р.</p>
             </li>
             <!-- 9 -->
-            <li class="catalog-item label-new">
+            <li class="catalog-item label-new" tabindex="0">
               <div class="catalog-item-buttons">
                 <button class="button-purchase" type="button">КУПИТЬ</button>
                 <button class="button-save" type="button">В закладки</button>
@@ -367,7 +370,7 @@
       <section class="footer-navigation container">
         <h2 class="visually-hidden">Навигация</h2>
         <a class="logo">
-          <img src="img/technomart-logo.svg" alt="technomart logo">
+          <img src="img/technomart-logo.svg" width="138" height="23" alt="technomart logo">
         </a>
         <ul class="footer-navigation-upper-list">
           <li class="footer-navigation-upper-item">
@@ -425,19 +428,19 @@
             <li class="social-item">
               <a href="#">
                 <span class="visually-hidden">vk</span>
-                <img src="img/icon-vk.svg" alt="vk-logo">
+                <img src="img/icon-vk.svg" width="26" height="15" alt="vk-logo">
               </a>
             </li>
             <li class="social-item">
               <a href="#">
                 <span class="visually-hidden">fb</span>
-                <img src="img/icon-fb.svg" alt="fb-logo">
+                <img src="img/icon-fb.svg" width="12" height="22" alt="fb-logo">
               </a>
             </li>
             <li class="social-item">
               <a href="#">
                 <span class="visually-hidden">instagram</span>
-                <img src="img/icon-insta.svg" alt="insta-logo">
+                <img src="img/icon-insta.svg" width="21" height="21" alt="insta-logo">
               </a>
             </li>
           </ul>
@@ -447,7 +450,7 @@
               Обратная связь:
             </p>
             <p>
-              <a class="gold" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+              <a class="requisite gold" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
             </p>
           </div>
           <div class="footer-contacts-feedback-site">
@@ -455,7 +458,7 @@
               Разработано —
             </p>
             <p>
-              <a class="gold" href="https://htmlacademy.ru/intensive/htmlcss">htmlacademy.ru</a>
+              <a class="requisite gold" href="https://htmlacademy.ru/intensive/htmlcss">htmlacademy.ru</a>
             </p>
           </div>
         </div>
