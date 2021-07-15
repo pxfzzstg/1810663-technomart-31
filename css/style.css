@@ -1692,6 +1692,11 @@ img {
     left: -35px;
 }
 
+.filter-input-checkbox:hover + span::before,
+.filter-input-checkbox:focus + span::before {
+    background-image: url("../img/checkbox-off-active.svg");
+}
+
 .filter-input-checkbox:checked + span::before {
     content: "";
     position: absolute;
@@ -1702,6 +1707,11 @@ img {
     background-position: 0 0;
     top: -3px;
     left: -35px;
+}
+
+.filter-input-checkbox:checked:hover + span::before,
+.filter-input-checkbox:checked:focus + span::before {
+    background-image: url("../img/checkbox-on-active.svg");
 }
 
 .filter-radio span::before {
@@ -1716,6 +1726,11 @@ img {
     left: -35px;
 }
 
+.filter-input-radio:hover + span::before,
+.filter-input-radio:focus + span::before {
+    background-image: url("../img/radio-off-active.svg");
+}
+
 .filter-input-radio:checked + span::before {
     content: "";
     position: absolute;
@@ -1726,6 +1741,11 @@ img {
     background-position: 0 0;
     top: -3px;
     left: -35px;
+}
+
+.filter-input-radio:checked:hover + span::before,
+.filter-input-radio:checked:focus + span::before {
+    background-image: url("../img/radio-on-active.svg");
 }
 
 .button-apply-filters {
