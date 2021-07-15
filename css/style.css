@@ -287,11 +287,11 @@ img {
     color: var(--basic-black)
 }
 
-.search:focus ~ .button-search {
+.search-label:focus-within ~ .button-search {
     opacity: 1;
 }
 
-.search:focus ~ .button-search path {
+.search-label:focus-within ~ .button-search path {
     fill: var(--basic-red);
 }
 
