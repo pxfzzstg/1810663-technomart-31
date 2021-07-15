@@ -31,7 +31,13 @@
     --purchase-active: #518534;
     --light-shade-grey: #E5E5E5;
     --lighter-grey: #F4F4F4;
-    --special-grey: #F1F1F1
+    --special-grey: #F1F1F1;
+    --alto: #CFCFCF;
+    --silver-chalice: #ABABAB;
+    --caribbean-green: #00CA74;
+    --iron: #D7DCDE;
+    --ebony-clay: #212A3A;
+    --bilbao: #367315;
 }
 
 /* Global */
@@ -889,7 +895,7 @@ img {
     height: 38px;
     padding: 0;
     border: none;
-    box-shadow: inset 0px -3px 0px #367315;
+    box-shadow: inset 0px -3px 0px var(--bilbao);
     border-radius: 2px;
     margin-top: 32px;
     margin-bottom: 10px;
@@ -1355,7 +1361,7 @@ img {
     border-radius: 50%;
     width: 44px;
     height: 44px;
-    background: linear-gradient(0deg, #212A3A, #212A3A);
+    background: linear-gradient(0deg, var(--ebony-clay), var(--ebony-clay));
 }
 
 .social-item a:hover,
@@ -1630,13 +1636,13 @@ img {
   
 .range-controls .scale {
     height: 2px;
-    background: #d7dcde;
+    background: var(--iron);
 }
   
 .range-controls .bar {
     width: 70%;
     height: 2px;
-    background: #00ca74;
+    background: var(--caribbean-green);
 }
   
 .range-controls .toggle {
@@ -1647,9 +1653,9 @@ img {
     height: 4px;
     padding: 0;
     border: 8px solid var(--white);
-    background-color: #ababab;
+    background-color: var(--silver-chalice);
     border-radius: 50%;
-    box-shadow: 0 2px 1px 0 #cfcfcf;
+    box-shadow: 0 2px 1px 0 var(--alto);
     cursor: pointer;
 }
   
